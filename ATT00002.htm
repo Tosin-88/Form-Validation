@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href=ATT0006.css type="text/css"/>
+        <title>
+           J-Registration Form
+        </title>
+        <meta http-equiv="Content-Type" content="text/html" charset=us-ascii></meta>
+    </head>
+   
+   
+   
+   
+    <body>
+        <header>
+            <h1>
+                J-Registration
+            </h1>
+        </header>
+        <section>
+            <h2>Form 1160</h2>
+
+
+
+           
+
+              <form onsubmit="return validate()" action="ATT00003.php" method="post">
+             
+                 <div class="FormElement">
+                     <label class="formInstruction">Username:</label>
+                     <input type=text name=username id=user required=""/>
+                 </div>
+                 <div class="FormElement" id="emailFormElement">
+                     <label class="formInstruction">Email:</label>
+                     <input type="email" name="email" id="email" placeholder="example@username.com" />
+                 </div>
+                 <div class="FormElement" id="repeatEmailFormElement">
+                    <label class="formInstruction">Email:</label>
+                    <input type="email" name="RepeatEmail" id="emailRepeat" placeholder="example@username.com" />
+                </div>
+                 <div class="FormElement" id="passwordFormElement">
+                     <label class="formInstruction">Password:</label>
+                     <input type=password name=password placeholder="password"/>
+                 </div>
+                 <div class="FormElement" id="passwordRepeatFormElement">
+                    <label class="formInstruction">Password:</label>
+                    <input type=password name=RepeatPassword placeholder="Repeat Password"/>
+
+                </div>
+                 <div class="FormElement">
+                     <label class="formInstruction full-length">Organisation/Company:</label>
+                     
+                         <select>
+                             <option value="None">None</option>
+                             <option value="NHS">NHS</option>
+                             <option value="Non-NHS">Non-NHS</option>
+                         </select>
+                        <input type=text name=organisation placeholder="Organisation/Company name"/>
+                     
+                 </div>
+                 
+                 <div class="FormElement">
+                     <label class="formInstruction full-length">Terms and Conditions</label>
+                    
+                         <input type=checkbox value="Agree" required=""><label class="termsValue">I agree</label>
+                         
+                      
+                </div>
+                <div class="FormElement">
+                    <input type="submit" value="Submit" />
+             </div>
+            </form>
+        </section>
+
+        <script src="ATT00004.js" type=text/javascript></script>
+        
+    </body>
+</html>
