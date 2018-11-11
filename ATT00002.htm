@@ -24,51 +24,59 @@
 
            
 
-              <form onsubmit="return validate()" action="ATT00003.php" method="post">
+              <form onsubmit="return validate()" action="C:\Users\tosin\Desktop\MS Viz-Code\ATT00007.htm" method="post">
              
                  <div class="FormElement">
                      <label class="formInstruction">Username:</label>
                      <input type=text name=username id=user required=""/>
                  </div>
-                 <div class="FormElement" id="emailFormElement">
+
+
+                 <div class="FormElement" id="emailDiv">
                      <label class="formInstruction">Email:</label>
                      <input type="email" name="email" id="email" placeholder="example@username.com" />
                  </div>
-                 <div class="FormElement" id="repeatEmailFormElement">
-                    <label class="formInstruction">Email:</label>
-                    <input type="email" name="RepeatEmail" id="emailRepeat" placeholder="example@username.com" />
+
+
+                 <div class="FormElement" id="emailDiv2">
+                    <label class="formInstruction">Confirm Email:</label>
+                    <input type="email" name="email2" id="email2" placeholder="example@username.com" />
                 </div>
+
+
                  <div class="FormElement" id="passwordFormElement">
                      <label class="formInstruction">Password:</label>
-                     <input type=password name=password placeholder="password"/>
+                     <input type=password id=password name=password placeholder="password"/>
                  </div>
+
+
                  <div class="FormElement" id="passwordRepeatFormElement">
-                    <label class="formInstruction">Password:</label>
-                    <input type=password name=RepeatPassword placeholder="Repeat Password"/>
+                    <label class="formInstruction">Confirm Password:</label>
+                    <input type=password id=password2 name=password2 placeholder="Repeat Password"/>
 
                 </div>
+
+
                  <div class="FormElement">
                      <label class="formInstruction full-length">Organisation/Company:</label>
-                     
-                         <select>
-                             <option value="None">None</option>
-                             <option value="NHS">NHS</option>
-                             <option value="Non-NHS">Non-NHS</option>
-                         </select>
                         <input type=text name=organisation placeholder="Organisation/Company name"/>
                      
                  </div>
+
+
                  
                  <div class="FormElement">
                      <label class="formInstruction full-length">Terms and Conditions</label>
                     
-                         <input type=checkbox value="Agree" required=""><label class="termsValue">I agree</label>
+                         <input type=checkbox id=agreeTerms value="Agree" required=""><label class="termsValue">I agree</label>
                          
                       
-                </div>
-                <div class="FormElement">
-                    <input type="submit" value="Submit" />
-             </div>
+                 </div>
+                 <div>
+                     <input class="button-click" type=submit value=submit id=submit class=submit>
+                 </div>
+
+
             </form>
         </section>
 
